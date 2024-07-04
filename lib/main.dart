@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/core/BottomNavigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,16 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(),
-        home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.blue,
-            title: const Text("Flight"),
-          ),
-          body: const Center(child: Text("Hello Flutter")),
-        ));
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BottomNav(),
+    );
   }
 }
