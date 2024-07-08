@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ticket_app/core/res/media.dart';
 import 'package:ticket_app/core/res/styles/AppStyles.dart';
+import 'package:ticket_app/core/res/widgets/DoubleText.dart';
+import 'package:ticket_app/core/res/widgets/TicketView.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -61,10 +63,16 @@ class HomePage extends StatelessWidget {
                       Text('  Search'),
                     ],
                   ),
-                )
+                ),
+                const SizedBox(height: 40),
+                const AppDoubleText(
+                  bigText: "Upcoming Flights",
+                  smallText: "View all",
+                ),
+                Ticketview()
               ],
             ),
-          )
+          ),
         ],
       ),
     );
